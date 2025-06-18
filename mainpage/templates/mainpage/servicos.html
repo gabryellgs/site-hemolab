@@ -1,0 +1,45 @@
+{% extends 'mainpage/base.html' %}
+
+{% load static %}
+
+{% block title %} Serviços - Hemolab {% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/servicos.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- CDN do font awesome free-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- CDN do google icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div id="background-main-enter">
+        <img src="{% static 'images/microscope-line.svg'%}." alt=""> <!-- remix icon icon-->
+        <h1>Serviços</h1>
+        <p>O Hemolab, dispõe de serviços de diagnose nas mais diversas áreas como biologia molecular, hematologia,
+            imuno-hematologia, citometria de fluxo, bioquímica, imunologia, hormônios, urinálises, parasitologia,
+            microbiologia, micologia, análises clínicas com recursos e equipamentos de ponta.</p>
+    </div>
+    <div id="background-main-inferior">
+        <h5>Confiabilidade e experiêcia</h5>
+        <h1>Confira os principais exames que ofertamos</h1>
+        <div id="cards-container">
+            <div class="card">
+                <i class="fa-solid fa-hand-holding-medical fa-4x"></i> <!-- font awesome icon -->
+                <h3>Vacinas</h3>
+                <p>O hemolab Vacinas é localizado na nossa Unidade Capim Macio, dispõe de vacinas para todas as fases da vida, do infantil a melhor idade.</p>
+                <p>(84) 99211-3793</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-vial fa-4x"></i> <!-- font awesome icon -->
+                <h3>Coletas externas</h3>
+                <p>Praticidade, conforto e segurança são os principais benefícios do serviço de coleta externa do Hemolab, basta agendar com pelo menos 24h de antecedência.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-stethoscope fa-4x"></i> <!-- font awesome icon -->
+                <h3>Drive-thru</h3>
+                <p>Nosso drive-thru é ideal para sua coleta de exames com mais segurança e comodidade, e fica localizadp ma Av. Nascimento de Castro, 1909</p>
+            </div>                                           
+        </div>
+
+    </div>
+{% endblock %}

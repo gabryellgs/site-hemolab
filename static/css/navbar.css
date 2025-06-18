@@ -1,0 +1,67 @@
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-size: medium;
+    font-family: quicksand;
+    font-weight: 800;
+    padding: 20px 40px;
+    gap: 10px;
+    width: 100vw;
+    box-shadow: 1px 9px 9px 0px rgba(0,0,0,0.11);
+    -webkit-box-shadow: 1px 9px 9px 0px rgba(0,0,0,0.11);
+    -moz-box-shadow: 1px 9px 9px 0px rgba(0,0,0,0.11);
+}
+
+nav #navbar-hemolab-logo{
+    width: 10vw;
+    margin-right: 20px;
+}
+
+.button-link:hover {
+    color: #00989E;
+    transition: 0.3s;
+}
+
+
+#navbar-parent-buttons-box {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+
+#navbar-buttons-box {
+    display: flex;
+}
+
+
+#navbar-buttons-box ul li {
+    margin: 10px;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+
+#navbar-buttons-box-2 {
+    display: flex;
+    gap: 40px;
+}
+
+
+#navbar-contacts-box {
+    display: flex; 
+    flex-direction: column;
+    font-size: medium;
+    align-self: center;
+    font-size: small;
+}
+
+#buy-button {
+    background-color: #15a8e7;
+}

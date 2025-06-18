@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+
+}
+
+#background-main-enter {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./background-cinza.png");
+    background-repeat: no-repeat;
+    justify-content: center;
+    text-align: center;
+    padding: 250px;
+}
+
+#background-main-enter img {
+    justify-self: center;
+    align-self: center;
+    width: 5vw;
+    margin: 40px;
+    padding: 40px;
+    border-radius: 90px;
+    background-color: white;
+}
+
+#background-main-enter p{
+    padding: 20px 200px;
+}
+
+#background-main-inferior {
+    display: flex;
+    background-image: url("./background-servicos.jpg");
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 150px;
+    gap: 40px;
+}
+
+#cards-container{
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    text-align: start;
+    gap: 20px;
+    padding: 30px 90px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 1px 5px 29px 9px rgba(0,0,0,0.06);
+    -webkit-box-shadow: 1px 5px 29px 9px rgba(0,0,0,0.06);
+    -moz-box-shadow: 1px 5px 29px 9px rgba(0,0,0,0.06);
+}
+
+.card i {
+    width: 12vw;
+}

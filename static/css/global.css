@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Special+Gothic+Expanded+One&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border: 0;
+}
+
+
+html{
+    color: #0E204D;
+    overflow-x: hidden;
+    font-family: quicksand;
+}
+
+
+a{
+    color: #0E204D;
+    text-decoration: none;
+}
+
+
+.button {
+    font-weight: 800;
+    padding: 14px 36px;
+    border-radius: 25px;
+    color: white;
+    background-color: #00989E;
+}
+
+.button:hover {
+    background-color: #01787c;
+    transition: 0.5s
+}

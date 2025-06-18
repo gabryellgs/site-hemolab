@@ -1,0 +1,34 @@
+{% load static %}
+
+<nav>
+    <a href="{% url 'index' %}">
+        <img id="navbar-hemolab-logo" src="{% static 'images/navbarlogo.png' %}" alt="">
+    </a>
+    <span>|</span>
+    <div id="navbar-parent-buttons-box">
+        <div id="navbar-buttons-box">
+            <ul>
+                <li><a href="" class="button-link">Home</a></li>
+                <li><a href="{% url 'servicos' %}" class="button-link">Serviços</a></li>
+                <li><a href="" class="button-link">Certificados</a></li>
+                <li><a href="{% url 'unidades' %}" class="button-link">Unidades</a></li>
+                <li><a href="" class="button-link">Quem Somos</a></li>
+            </ul>       
+        </div>
+
+        <div id="navbar-buttons-box-2">
+            <div id="navbar-contacts-box">
+                <a href="" class="button-link">(84) 3616-5000</a>
+                <a href="" class="button-link">(84) 3616-5000</a>       
+            </div>
+            <div id="navbar-more-box">
+                <a href="" class="link-button">
+                    <button class="button" id="results-button">Resultados</button>
+                </a>
+                <a href="" class="link-button">
+                    <button class="button" id="buy-button">Compre Online</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>

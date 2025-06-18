@@ -1,0 +1,230 @@
+{% extends 'mainpage/base.html' %}
+
+{% load static %}
+
+{% block title %}Página Inicial {% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div id="main-title-btn-container">
+    <div id="main-info-box">
+        <h1>Baixe o novo app Hemolab</h1>
+        <p>Acesso os resultados dos exames, encontre a unidade mais próxima e muito mais.</p>
+        <a href="">
+            <button class="button">Acessar agora</button>
+        </a>
+    </div>
+</div>
+
+<div id="main-box-1">
+    <div id="hemolab-info-box-1">
+        <h1>O Hemolab.</h1>
+        <p>Sempre pautado em princípios éticos e composto por uma equipe de profissionais capacitados, investe na
+            excelência de métodos através da participação de programa de qualidade nacional, de educação continuada e do
+            emprego de tecnologia de automação nos seus processos analíticos.</p>
+        <p>Estes requisitos, aliado ao espírito de bem servir à nossa clientela, nos confere o lugar de destaque no
+            cenário da análise clínica do estado do Rio Grande do Norte.</p>
+        <button class="button">Saiba Mais</button>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZALhLc3D-4w?si=BEJRB-RdqO_snqTV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div>
+    <div id="main-box-2">
+        <div>
+            <h1>Nossas Unidades</h1>
+            <p>Tem sempre um hemolab perto de você!</p>
+            <p>Coletas são realizadas até 1 hora antes do fechamento.</p>
+        </div>
+
+<!--        <div id="mbx-cards-containers">
+            <div class="card" id="card-1">
+                <img src="{% static 'images/roberto freire e vacinas.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Capim Macio</h3>
+                    <ul>
+                        <li>Av. Engenheiro Roberto
+                            Freire, 915 - Capim Macio, Natal - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            16:00h Sábado das 6:30h às 12:00h</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="card" id="card-2">
+                <img src="{% static 'images/coophab.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Coophab</h3>
+                    <ul>
+                        <li>Av. Olavo Lacerda
+                            Montenegro, 3345 - Parque das Nações, Parnamirim - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            12:00h Sábado das 6:30h às 10:30h</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="card" id="card-3">
+                <img src="{% static 'images/esperanca.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Cidade da Esperança</h3>
+                    <ul>
+                        <li>Av. Paraíba, 120 -
+                            Cidade
+                            da Esperança, Natal - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            12:00h Sábado das 6:30h às 10:30h</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div> 
+-->
+
+        <!-- Carrossel Básico -->
+        <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-slide active">
+            <div class="card">
+                <img src="{% static 'images/roberto freire e vacinas.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Capim Macio</h3>
+                    <ul>
+                        <li>Av. Engenheiro Roberto
+                            Freire, 915 - Capim Macio, Natal - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            16:00h Sábado das 6:30h às 12:00h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/coophab.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Coophab</h3>
+                    <ul>
+                        <li>Av. Olavo Lacerda
+                            Montenegro, 3345 - Parque das Nações, Parnamirim - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            12:00h Sábado das 6:30h às 10:30h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/esperanca.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Cidade da Esperança</h3>
+                    <ul>
+                        <li>Av. Paraíba, 120 -
+                            Cidade
+                            da Esperança, Natal - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das
+                            6:00h
+                            às
+                            12:00h Sábado das 6:30h às 10:30h</li>
+                    </ul>
+                </div>
+
+            </div>
+            </div>
+            <div class="carousel-slide">
+            <div class="card">
+                <img src="{% static 'images/petropolis.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Petrópolis</h3>
+                    <ul>
+                        <li>Av. Deodoro da Fonseca, 284, Petrópolis, Natal, RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das 6:00 ás 17:00. Sábado das 6:30 às 13:00.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/nasccastro.png' %}" alt="">
+                <div>
+                    <h3>Hemolab - Nascimento de castro</h3>
+                    <ul>
+                        <li>Av. Nascimento de Castro, 1909, Lagoa Nova</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda à Sexta das 6:00 ás 16:00. Sábado das 6:30 às 12:00.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="{% static 'images/migcastro.png'%}" alt="">
+                <div>
+                    <h3>Hemolab - Miguel Castro</h3>
+                    <ul>
+                        <li>Av. Miguel Castro, 1137, Lagoa Nova</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda a sexta das 6:00 às 12:00. Sábado das 6:30 às 10:30</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev">&#10094;</button>
+        <button class="carousel-btn next">&#10095;</button>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+        </div>
+        </div>
+
+        <a href="">Todas as unidades</a>
+    </div>
+
+</div>
+
+        <script>
+            const slides = document.querySelectorAll('.carousel-slide');
+            const dots = document.querySelectorAll('.dot');
+            let currentIndex = 0;
+
+            function showSlide(index) {
+            const inner = document.querySelector('.carousel-inner');
+            inner.style.transform = `translateX(-${index * 100}%)`;
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentIndex = index;
+            }
+
+            document.querySelector('.next').addEventListener('click', () => {
+            const next = (currentIndex + 1) % slides.length;
+            showSlide(next);
+            });
+            document.querySelector('.prev').addEventListener('click', () => {
+            const prev = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(prev);
+            });
+            dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const index = parseInt(dot.dataset.index);
+                showSlide(index);
+            });
+            });
+        </script>
+
+
+{% endblock %}

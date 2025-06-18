@@ -1,0 +1,73 @@
+{% extends 'mainpage/base.html' %}
+
+{% load static %}
+
+{% block title %}pagina de unidades {% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{% static 'css/unidades.css' %}">
+{% endblock %}
+
+{% block content %}
+<body>
+      <main class="main">
+        <section class="unidad-section">
+            <div class="predio">
+                <div class="predio-2">
+                    <img src="{% static 'images/predio.png' %}" alt="Ícone prédio">
+                </div>
+            </div>
+
+            <div class="unidades">
+                <h2>Unidades</h2>
+                <p>Tem sempre um Hemolab perto de você! O Hemolab conta com unidades completas, com o melhor atendimento, espalhadas por toda Natal e Grande Natal.</p>
+            </div>
+
+            <div class="hemolab-proximas">
+                <p>OBS: Coletas só realizadas até 1 hora antes do fechamento (Exceto Petrópolis).</p>
+                <h2>Sempre próximos de você</h2>
+                <h3>Encontre a unidade Hemolab mais próxima</h3>
+            </div>
+
+            <div class="cards">
+                <div class="card-noticias">
+                    <img src="{% static 'images/petropolis.png' %}" alt="Hemolab - Petrópolis">
+                    <h3>Hemolab - Petrópolis</h3>
+                    <ul>
+                        <li>Av. Deodoro da Fonseca, 284 - Petrópolis, Natal - RN</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda a Sexta das 06h às 17h
+                            Sábado das 06h às 12h
+                        </li>
+                    </ul>
+                    <div class="linha-card"></div>
+        
+                </div>
+                <div class="card-noticias">
+                    <img src="{% static 'images/nasccastro.png' %}" alt="Hemolab - Nascimento de Castro">
+                    <h3>Hemolab - Nascimento de Castro</h3>
+                    <ul>
+                        <li>Av. Nascimento de Castro, 1900 - Lagoa Nova</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda a Sexta das 06h às 18h Sábado das 06h às 12h</li>
+                    </ul>
+                    <div class="linha-card"></div>
+                </div>
+                <div class="card-noticias">
+                    <img src="{% static 'images/migcastro.png' %}" alt="Hemolab - Miguel Castro">
+                    <h3>Hemolab - Miguel Castro</h3>
+                    <ul>
+                        <li>Av. Miguel Castro, 1137 - Lagoa Nova</li>
+                        <li>(84) 3616-5000</li>
+                        <li>Segunda a Sexta das 06h às 12h Sábado das 06h às 12h</li>
+                    </ul>
+
+                    <div class="linha-card"></div>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>  
+</body>
+{% endblock %}
