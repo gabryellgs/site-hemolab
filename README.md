@@ -1,4 +1,4 @@
-# 🧪 Projeto HemolabRN
+# 🧪 Projeto Hemolab
 
 Este projeto foi desenvolvido na disciplina de **Backend**, com entrega em **18 de junho de 2025**.  
 O objetivo é implementar um **site institucional** utilizando o framework **Django**, simulando uma plataforma de apresentação de serviços laboratoriais.
